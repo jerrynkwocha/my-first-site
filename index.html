@@ -3,18 +3,24 @@
 <head>
   <title>My First Website</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="pages/about.html">About</a>
+<nav class="navbar">
+  <div class="logo">MySite</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+  </div>
 </nav>
 
-  <h1>Hello, I am a Web Developer 🚀</h1>
-  <p>This website is coded by me.</p>
-
-  <button onclick="showMessage()">Click Me</button>
+<section class="hero">
+  <h1>I Build Websites</h1>
+  <p>Learning web development by building real projects.</p>
+  <button onclick="showMessage()">Get Started</button>
+</section>
 
   <script src="js/script.js"></script>
 </body>
