@@ -59,28 +59,37 @@ html {
 }
 
 .hero button {
-  padding: 12px 24px;
+  padding: 14px 28px;
   border: none;
   background: white;
   color: #333;
   font-size: 16px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .hero button:hover {
+  transform: translateY(-2px);
   background: #f0f0f0;
 }
 
 /* SECTION GENERAL */
 section {
-  padding: 80px 20px;
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: auto;
   text-align: center;
 }
 
 section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+section p {
+  color: #555;
+  line-height: 1.6;
 }
 
 /* ABOUT */
@@ -116,6 +125,11 @@ section h2 {
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 .projects-container {
@@ -146,6 +160,17 @@ section h2 {
   color: white;
   text-decoration: none;
   border-radius: 6px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* MOBILE RESPONSIVENESS */
